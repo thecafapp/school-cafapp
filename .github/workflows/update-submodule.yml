@@ -2,6 +2,7 @@ name: Update Submodule
 on:
   repository_dispatch:
     types: [update-core]
+  workflow_dispatch:
 
 jobs:
   update:
