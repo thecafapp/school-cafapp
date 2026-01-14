@@ -88,7 +88,7 @@ It is critical that these values are kept in a `.env.local` file, which should *
 
 This file stores sensitive credentials and environment-specific variables. While the `caf.config.json` handles the public app configuration, this file handles **private infrastructure access.**
 
-### 1. Database Configuration
+### Database Configuration
 
 | Variable | Description |
 | --- | --- |
