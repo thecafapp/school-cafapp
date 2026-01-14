@@ -1,0 +1,29 @@
+name: Update Submodule
+on:
+  repository_dispatch:
+    types: [update-core]
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Update Submodule to Latest
+        run: |
+          git submodule update --remote --merge
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+
+          # Check if there are actually changes to commit
+          if [ -n "$(git status --porcelain)" ]; then
+            git add core
+            git commit -m "chore: update core submodule to latest"
+            git push
+          else
+            echo "No changes detected in core."
+          fi
