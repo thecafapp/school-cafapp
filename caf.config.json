@@ -1,15 +1,15 @@
 {
-  "schoolName": "Mississippi College",
-  "schoolId": "mc",
+  "schoolName": "",
+  "schoolId": "",
   "branding": {
-    "appTitle": "The Caf at MC",
+    "appTitle": "The Caf at My School",
     "cafName": "The Caf",
-    "domain": "mc.thecaf.app"
+    "domain": "school.thecaf.app"
   },
   "auth": {
     "method": "google",
-    "restrictGoogleDomains": true,
-    "allowedGoogleDomain": "mc.edu"
+    "restrictGoogleDomains": false,
+    "allowedGoogleDomain": ""
   },
   "theme": {
     "light": {
@@ -29,6 +29,6 @@
   },
   "featureFlags": [],
   "database": {
-    "name": "info"
+    "name": "db"
   }
 }
