@@ -1,0 +1,22 @@
+{
+  "name": "mc-cafapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cd ./core && npm run dev",
+    "reset-submodule": "git submodule update --init --recursive",
+    "diff-submodule": "git diff --submodule",
+    "pull-submodule": "git submodule update --remote --merge",
+    "postinstall": "cd ./core && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thecafapp/mc-cafapp.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/thecafapp/mc-cafapp/issues"
+  },
+  "homepage": "https://github.com/thecafapp/mc-cafapp#readme",
+  "description": ""
+}
