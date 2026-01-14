@@ -1,7 +1,6 @@
 {
-  "name": "mc-cafapp",
+  "name": "school-cafapp",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "dev": "cd ./core && npm run dev",
     "reset-submodule": "git submodule update --init --recursive",
@@ -11,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thecafapp/mc-cafapp.git"
+    "url": "git+https://github.com/thecafapp/school-cafapp.git"
   },
   "author": "",
   "bugs": {
-    "url": "https://github.com/thecafapp/mc-cafapp/issues"
+    "url": "https://github.com/thecafapp/school-cafapp/issues"
   },
-  "homepage": "https://github.com/thecafapp/mc-cafapp#readme",
-  "description": ""
+  "homepage": "https://github.com/thecafapp/school-cafapp#readme",
+  "description": "Template for The Caf App at an individual school"
 }
